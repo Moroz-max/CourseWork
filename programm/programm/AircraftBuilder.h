@@ -3,6 +3,8 @@
 
 using namespace std;
 
+
+// обстрактный сборщик самолетов
 class AircraftBuilder
 {
 protected:
@@ -14,22 +16,22 @@ public:
 
 	void createNewPizzaProduct() { air.reset(new aircraft); }
 
-	virtual void SetName(string Name) = 0;
-	virtual void SetBelonging(string belonging) = 0;
+	virtual void SetName() = 0;
+	virtual void SetBelonging() = 0;
 
-	virtual void SetTypeAppatatus(string typeAppatatus) = 0;
-	virtual void SetTypeWeapon(string typeWeapon) = 0;
-	virtual void SetTypeEngine(string typeEngine) = 0;
-	virtual void SetTypeChassis(string typeChassis) = 0;
-	virtual void SetTypeTakeoffLanding(string typeTakeoffLanding) = 0;
+	virtual void SetTypeAppatatus() = 0;
+	virtual void SetTypeWeapon() = 0;
+	virtual void SetTypeEngine() = 0;
+	virtual void SetTypeChassis() = 0;
+	virtual void SetTypeTakeoffLanding() = 0;
 
-	virtual void SetTakeoffWeight(string takeoffWeight) = 0;
-	virtual void SetNumbersEngine(string numbersEngine) = 0;
-	virtual void SetWingsLocation(string wingsLocation) = 0;
-	virtual void SetFlightSpeed(string flightSpeed) = 0;
-	virtual void SetManagement(string management) = 0;
-	virtual void SetCrew(string crew) = 0;
-	virtual void SetProductionYear(string productionYear) = 0;
+	virtual void SetTakeoffWeight() = 0;
+	virtual void SetNumbersEngine() = 0;
+	virtual void SetWingsLocation() = 0;
+	virtual void SetFlightSpeed() = 0;
+	virtual void SetManagement() = 0;
+	virtual void SetCrew() = 0;
+	virtual void SetProductionYear() = 0;
 
 };
 
