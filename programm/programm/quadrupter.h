@@ -1,9 +1,9 @@
 #pragma once
-#include "aircraft.h"
+#include "AircraftBuilder.h"
 
 
 
-class quadrupter : public aircraft
+class quadrupter : public AircraftBuilder
 {
 public:
 	quadrupter();

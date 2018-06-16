@@ -1,11 +1,23 @@
 #pragma once
-#include "aircraft.h"
+#include "AircraftBuilder.h"
 
 
-class conveyor : public aircraft
+class conveyor
 {
+private:
+	AircraftBuilder * aircraftBuilder;
 public:
-	conveyor();
-	~conveyor();
+	conveyor() : aircraftBuilder(NULL) {}
+	~conveyor() { }
+
+	void SetPizzaBuilder(AircraftBuilder* b) { aircraftBuilder = b; }
+	//std::shared_ptr<aircraft> GetPizza() { return aircraftBuilder->GetPizza(); }
+	//void ConstructPizza()
+	//{
+	//	aircraftBuilder->createNewPizzaProduct();
+	//	aircraftBuilder->buildDough();
+	//	aircraftBuilder->buildSauce();
+	//	aircraftBuilder->buildTopping();
+	//}
 };
 

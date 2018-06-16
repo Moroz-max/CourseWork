@@ -1,8 +1,8 @@
 #pragma once
-#include "aircraft.h"
+#include "AircraftBuilder.h"
 
 
-class combat_aircraft : public aircraft
+class combat_aircraft : public AircraftBuilder
 {
 public:
 	combat_aircraft();
