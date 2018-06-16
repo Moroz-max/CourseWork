@@ -2,11 +2,4 @@
 #include "quadrupter.h"
 
 
-quadrupter::quadrupter()
-{
-}
 
-
-quadrupter::~quadrupter()
-{
-}

@@ -3,6 +3,8 @@
 #include <iostream>
 #include <memory>
 
+#define N 100 // максимальная длина вводимых строк с клавы
+
 using namespace std;
 
 // самолет
@@ -13,7 +15,7 @@ protected:
 
 	string Belonging; // принадлежность (гр. или военная)
 	
-	string TypeAppatatus; // тип аппарата
+	string TypeAppatatus; // тип аппарата (пассажирский самолет, военный самолет, вертолет, квадрокоптер)
 	string TypeWeapon; // тип вооружения
 	string TypeEngine; // тип двигателя
 	string TypeChassis; // тип шасси
@@ -69,6 +71,9 @@ public:
 
 		return;
 	}
+
+	void Save();
+	void Read();
 
 };
 

@@ -1,8 +1,6 @@
 #pragma once
 #include "AircraftBuilder.h"
 
-#define N 100 // максимальная длина вводимых строк с клавы
-
 // конвейер для сборки самолетов
 class conveyor
 {
@@ -15,5 +13,7 @@ public:
 	void SetPizzaBuilder(AircraftBuilder* b) { aircraftBuilder = b; }
 	std::shared_ptr<aircraft> GetPizza() { return aircraftBuilder->GetPizza(); }
 	void ConstructPizza();
+
+	void menu();
 };
 

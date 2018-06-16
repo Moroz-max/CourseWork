@@ -9,6 +9,8 @@ class AircraftBuilder
 {
 protected:
 	shared_ptr<aircraft> air;
+
+	string Entry(const char[]);
 public:
 	AircraftBuilder() {}
 	virtual ~AircraftBuilder() {}

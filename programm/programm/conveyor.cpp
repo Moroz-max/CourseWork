@@ -31,3 +31,9 @@ void conveyor::ConstructPizza()
 	aircraftBuilder->SetManagement();
 	aircraftBuilder->SetProductionYear();
 }
+
+void conveyor::menu() {
+
+}
+
+
