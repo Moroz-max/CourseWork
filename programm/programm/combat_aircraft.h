@@ -1,5 +1,8 @@
 #pragma once
-class combat_aircraft
+#include "aircraft.h"
+
+
+class combat_aircraft : public aircraft
 {
 public:
 	combat_aircraft();

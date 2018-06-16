@@ -1,5 +1,9 @@
 #pragma once
-class quadrupter
+#include "aircraft.h"
+
+
+
+class quadrupter : public aircraft
 {
 public:
 	quadrupter();

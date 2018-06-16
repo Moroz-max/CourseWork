@@ -1,5 +1,8 @@
 #pragma once
-class conveyor
+#include "aircraft.h"
+
+
+class conveyor : public aircraft
 {
 public:
 	conveyor();
