@@ -5,7 +5,7 @@
 class combat_aircraft : public AircraftBuilder
 {
 public:
-	combat_aircraft() : AircraftBuilder() {} {}
+	combat_aircraft() : AircraftBuilder() {}
 	~combat_aircraft() {}
 
 	void SetName() { air->SetName(Entry("Name")); }

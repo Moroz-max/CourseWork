@@ -14,9 +14,9 @@ protected:
 public:
 	AircraftBuilder() {}
 	virtual ~AircraftBuilder() {}
-	std::shared_ptr<aircraft> GetPizza() { return air; }
+	std::shared_ptr<aircraft> GetAircraft() { return air; }
 
-	void createNewPizzaProduct() { air.reset(new aircraft); }
+	void createNewAircraftProduct() { air.reset(new aircraft); }
 
 	virtual void SetName() = 0;
 	virtual void SetBelonging() = 0;

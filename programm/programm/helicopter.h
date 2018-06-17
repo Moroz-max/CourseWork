@@ -6,7 +6,7 @@
 class helicopter : public AircraftBuilder
 {
 public:
-	helicopter() : AircraftBuilder() {} {}
+	helicopter() : AircraftBuilder() {}
 	~helicopter() {}
 
 	void SetName() { air->SetName(Entry("Name")); }

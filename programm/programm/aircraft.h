@@ -2,6 +2,7 @@
 #include <string>
 #include <iostream>
 #include <memory>
+#include <fstream>
 
 #define N 100 // максимальная длина вводимых строк с клавы
 
@@ -14,13 +15,13 @@ protected:
 	string name; // название данной техники
 
 	string Belonging; // принадлежность (гр. или военная)
-	
+
 	string TypeAppatatus; // тип аппарата (пассажирский самолет, военный самолет, вертолет, квадрокоптер)
 	string TypeWeapon; // тип вооружения
 	string TypeEngine; // тип двигателя
 	string TypeChassis; // тип шасси
 	string TypeTakeoffLanding; // тип взлета и посадки
-	
+
 	string TakeoffWeight; // взлетная масса
 	string NumbersEngine; // число двигателей
 	string WingsLocation; // рассположение крыльев
@@ -28,7 +29,7 @@ protected:
 	string Management; // способ управления
 	string Crew; // экипаж
 	string ProductionYear; // год производства
-	
+
 public:
 	aircraft() {}
 	~aircraft() {}
@@ -50,30 +51,10 @@ public:
 	void SetCrew(string crew) { Crew = crew; }
 	void SetProductionYear(string productionYear) { ProductionYear = productionYear; }
 
-	void show() {
-		cout << " aircraft " << endl
-			<< "Name: " << name << endl
-			<< "Belonging: " << Belonging << endl
+	void show();
 
-			<< "TypeAppatatus: " << TypeAppatatus << endl
-			<< "TypeWeapon " << TypeWeapon << endl
-			<< "TypeEngine: " << TypeEngine << endl
-			<< "TypeChassis: " << TypeChassis << endl
-			<< "TypeTakeoffLanding: " << TypeTakeoffLanding << endl
-
-			<< "TakeoffWeight: " << TakeoffWeight << endl
-			<< "NumbersEngine: " << NumbersEngine << endl
-			<< "WingsLocation: " << WingsLocation << endl
-			<< "FlightSpeed: " << FlightSpeed << endl
-			<< "Management: " << Management << endl
-			<< "Crew: " << Crew << endl
-			<< "ProductionYear: " << ProductionYear << endl;
-
-		return;
-	}
-
-	void Save();
-	void Read();
+	bool Save(ofstream &file);
+	bool Read(ifstream &file);
 
 };
 

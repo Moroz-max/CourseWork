@@ -6,7 +6,7 @@
 class quadrupter : public AircraftBuilder
 {
 public:
-	quadrupter() : AircraftBuilder() {} {}
+	quadrupter() : AircraftBuilder() {}
 	~quadrupter() {}
 
 	void SetName() { air->SetName(Entry("Name")); }
